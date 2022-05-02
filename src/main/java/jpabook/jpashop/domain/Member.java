@@ -15,9 +15,11 @@ public class Member {
     private Long id;
 
     private String name;
+
     // 내장타입
     @Embedded
     private Address address;
+
     //일대다, 연관관계 거울(읽기 전용)
     @OneToMany(mappedBy = "member")
     private List<Order> orders = new ArrayList<>();
