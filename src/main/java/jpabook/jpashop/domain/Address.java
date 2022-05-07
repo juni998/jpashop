@@ -15,4 +15,10 @@ public class Address {
     //JPA 스펙 상 만듬, public 보다 그나마 안전
     protected Address() {
     }
+    public Address(String city, String street, String zipcode) {
+        this.city = city;
+        this.street = street;
+        this.zipcode = zipcode;
+    }
+
 }
